@@ -1,105 +1,45 @@
-# 🤖 AI-Powered Regulatory Compliance Checker for Contracts
+Steps to Run This Code
+Step 1: Install Python
 
-This project automates the process of checking contracts against various regulatory standards such as **GDPR**, **DPA**, and **HIPAA** using Artificial Intelligence.
-It extracts data from uploaded contract files, analyzes them, and flags compliance issues with detailed explanations.
+    Make sure you have Python 3.13 installed on your system.
+    Check your version using:
 
----
+    python --version
 
-## 🌟 Features
-
-- 📄 Extracts text and metadata from uploaded PDF contract files.
-- 🔍 Matches extracted content with predefined regulatory compliance templates.
-- 🚩 Detects and highlights non-compliant clauses.
-- 📊 Generates a detailed report of compliance findings.
-- 🖥️ Provides a simple and interactive **Streamlit-based UI**.
-- 🔌 Supports integration with multiple APIs for advanced NLP and legal text analysis.
-
----
-
-## 📋 Prerequisites
-
-Before running this project, ensure that you have:
-
-- 🐍 **Python 3.13 or later** installed on your system.
-- 💻 An IDE such as **Visual Studio Code**, **PyCharm**, or **Jupyter Notebook**.
-- 🌐 **Internet access** for making API calls.
-- 🔑 Required **API keys** stored securely in a `.env` file.
-
----
-
-## 🚀 Steps to Run This Project
-
-### Step 1: Install Python
-
-Make sure you have **Python 3.13** installed on your system.
-You can verify your installation by running:
-
-```bash
-python --version
 Step 2: Set Up an IDE
-Use any IDE of your choice for development and execution. Examples include:
 
-Visual Studio Code
+    Use any IDE of your choice — for example:
 
-PyCharm
+    Visual Studio Code
 
-Jupyter Notebook (optional)
+    PyCharm
 
-Make sure your IDE is configured to use the correct Python interpreter.
+    Jupyter Notebook (optional)
 
-Step 3: Clone or Download the Repository
-If you're using Git, clone the repository with:
+Step 3: Create and Activate a Virtual Environment
+    🪟 For Windows
+    python -m venv venv
+    venv\Scripts\activate
 
-Bash
+    🐧 For macOS / Linux
+    python3 -m venv venv
+    source venv/bin/activate
 
-git clone <repository-link>
-Step 4: Navigate to the Project Directory
-Change to the directory where the project files are located:
 
-Bash
+    Once activated, your terminal prompt should show (venv) at the beginning.
 
-cd AI-Regulatory-Compliance-Checker
-Step 5: Create and Activate a Virtual Environment
-Creating a virtual environment helps manage dependencies.
+Step 4: Install Requirements
 
-For Windows (Command Prompt):
-DOS
+    pip install -r requirements.txt
 
-python -m venv venv
-venv\Scripts\activate
-For macOS / Linux:
-Bash
+Step 5: Set Your API Keys
 
-python3 -m venv venv
-source venv/bin/activate
-Step 6: Upgrade pip (Optional but Recommended)
-Before installing packages, ensure your pip is up-to-date:
+    Create a .env file in the project root directory and add your API keys, for example:
 
-Bash
+    API_KEY=your_api_key_here
 
-python -m pip install --upgrade pip
-Step 7: Install Requirements
-Install all the necessary Python dependencies listed in the requirements.txt file by running:
+Step 6: Run the Data Extraction Script
+    python data_extraction.py
 
-Bash
-
-pip install -r requirements.txt
-Step 8: Configure Environment Variables
-Create a .env file in the root directory of the project and add your API keys as follows:
-
-Code snippet
-
-OPENAI_API_KEY=your_openai_key_here
-GOOGLE_API_KEY=your_google_key_here
-Step 9: Run the Data Extraction Script
-This script extracts text and metadata from uploaded PDF contracts.
-
-Bash
-
-python data_extraction.py
-Step 10: Run the Streamlit Application
-To launch the main web application, run:
-
-Bash
-
-streamlit run main.py
+Step 7: Run the Streamlit App
+    streamlit run main.py
