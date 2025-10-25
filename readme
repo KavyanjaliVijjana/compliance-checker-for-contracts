@@ -1,129 +1,105 @@
-# AI-Powered Regulatory Compliance Checker for Contracts
+# 🤖 AI-Powered Regulatory Compliance Checker for Contracts
 
-This project automates the process of checking contracts against various regulatory standards such as **GDPR**, **DPA**, and **HIPAA** using Artificial Intelligence.  
+This project automates the process of checking contracts against various regulatory standards such as **GDPR**, **DPA**, and **HIPAA** using Artificial Intelligence.
 It extracts data from uploaded contract files, analyzes them, and flags compliance issues with detailed explanations.
 
 ---
 
-## **Features**
+## 🌟 Features
 
-- Extracts text and metadata from uploaded PDF contract files.  
-- Matches extracted content with predefined regulatory compliance templates.  
-- Detects and highlights non-compliant clauses.  
-- Generates a detailed report of compliance findings.  
-- Provides a simple and interactive **Streamlit-based UI**.  
-- Supports integration with multiple APIs for advanced NLP and legal text analysis.
+- 📄 Extracts text and metadata from uploaded PDF contract files.
+- 🔍 Matches extracted content with predefined regulatory compliance templates.
+- 🚩 Detects and highlights non-compliant clauses.
+- 📊 Generates a detailed report of compliance findings.
+- 🖥️ Provides a simple and interactive **Streamlit-based UI**.
+- 🔌 Supports integration with multiple APIs for advanced NLP and legal text analysis.
 
 ---
 
-## **Prerequisites**
+## 📋 Prerequisites
 
 Before running this project, ensure that you have:
 
-- **Python 3.13 or later** installed on your system.  
-- An IDE such as **Visual Studio Code**, **PyCharm**, or **Jupyter Notebook**.  
-- **Internet access** for making API calls.  
-- Required **API keys** stored securely in a `.env` file.  
+- 🐍 **Python 3.13 or later** installed on your system.
+- 💻 An IDE such as **Visual Studio Code**, **PyCharm**, or **Jupyter Notebook**.
+- 🌐 **Internet access** for making API calls.
+- 🔑 Required **API keys** stored securely in a `.env` file.
 
 ---
 
-## **Steps to Run This Project**
+## 🚀 Steps to Run This Project
 
-### **Step 1: Install Python**
+### Step 1: Install Python
 
-Make sure you have **Python 3.13** installed on your system.  
+Make sure you have **Python 3.13** installed on your system.
 You can verify your installation by running:
 
 ```bash
 python --version
-
----
-
-## Step 2: Set Up an IDE
-
+Step 2: Set Up an IDE
 Use any IDE of your choice for development and execution. Examples include:
-- **Visual Studio Code**  
-- **PyCharm**  
-- **Jupyter Notebook (optional)**
+
+Visual Studio Code
+
+PyCharm
+
+Jupyter Notebook (optional)
 
 Make sure your IDE is configured to use the correct Python interpreter.
 
----
-
-## Step 3: Clone or Download the Repository
-
+Step 3: Clone or Download the Repository
 If you're using Git, clone the repository with:
 
-```bash
+Bash
+
 git clone <repository-link>
-
----
-
-## Step 4: Navigate to the Project Directory
-
+Step 4: Navigate to the Project Directory
 Change to the directory where the project files are located:
 
-```bash
+Bash
+
 cd AI-Regulatory-Compliance-Checker
-
----
-
-## Step 5: Create and Activate a Virtual Environment
-
+Step 5: Create and Activate a Virtual Environment
 Creating a virtual environment helps manage dependencies.
 
-### For Windows:
-```bash
+For Windows (Command Prompt):
+DOS
+
 python -m venv venv
 venv\Scripts\activate
+For macOS / Linux:
+Bash
 
-### For macOS / Linux:
-```bash
 python3 -m venv venv
 source venv/bin/activate
-
----
-
-## Step 6: Upgrade pip (Optional but Recommended)
-
+Step 6: Upgrade pip (Optional but Recommended)
 Before installing packages, ensure your pip is up-to-date:
 
-```bash
+Bash
+
 python -m pip install --upgrade pip
+Step 7: Install Requirements
+Install all the necessary Python dependencies listed in the requirements.txt file by running:
 
----
+Bash
 
-## Step 7: Install Requirements
-
-Install all the necessary Python dependencies listed in the `requirements.txt` file by running:
-
-```bash
 pip install -r requirements.txt
+Step 8: Configure Environment Variables
+Create a .env file in the root directory of the project and add your API keys as follows:
 
----
+Code snippet
 
-## Step 8: Configure Environment Variables
-
-Create a `.env` file in the **root directory** of the project and add your API keys as follows:
-
-```env
 OPENAI_API_KEY=your_openai_key_here
 GOOGLE_API_KEY=your_google_key_here
-
----
-
-## Step 9: Run the Data Extraction Script
-
+Step 9: Run the Data Extraction Script
 This script extracts text and metadata from uploaded PDF contracts.
 
-```bash
+Bash
+
 python data_extraction.py
-
----
-
-## Step 10: Run the Streamlit Application
-
+Step 10: Run the Streamlit Application
 To launch the main web application, run:
 
-```bash
+Bash
+
 streamlit run main.py
