@@ -245,6 +245,7 @@ if __name__ == "__main__":
                 else:
                     st.error(f"This document is not under GDPR Compliance")
                     
+                    
     # Add a footer
     st.markdown("""
     <div style='text-align: center; color: #94a3b8; margin-top: 4rem; padding: 1rem;'>
